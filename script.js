@@ -60,7 +60,7 @@ window.addEventListener('scroll', () => {
 // Función para abrir WhatsApp
 function openWhatsApp() {
     // Reemplaza con tu número de WhatsApp (incluye código de país sin +)
-    const phoneNumber = '573001234567'; // Ejemplo: Colombia 3001234567
+    const phoneNumber = '573160401117'; // Colombia: 3160401117
     const message = encodeURIComponent('¡Hola! Me interesa conocer más sobre las extensiones de cabello AGM Luxury Hair.');
     window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
 }
