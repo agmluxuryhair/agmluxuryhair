@@ -3,91 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
-        
-        .container {
-            background: white;
-            padding: 50px;
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-            text-align: center;
-            max-width: 600px;
-            animation: fadeIn 1s ease-in;
-        }
-        
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        
-        h1 {
-            color: #667eea;
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-        
-        p {
-            color: #555;
-            font-size: 1.2em;
-            line-height: 1.8;
-            margin-bottom: 30px;
-        }
-        
-        .button {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 15px 40px;
-            border-radius: 30px;
-            text-decoration: none;
-            display: inline-block;
-            font-weight: bold;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        
-        .button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.5);
-        }
-        
-        .emoji {
-            font-size: 4em;
-            margin-bottom: 20px;
-            animation: bounce 2s infinite;
-        }
-        
-        @keyframes bounce {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-20px); }
-        }
-    </style>
+    <meta name="description" content="AGM Luxury Hair - Extensiones de cabello humano premium. Largo, volumen y brillo natural. Calidad excepcional para transformar tu look.">
+    <meta name="keywords" content="extensiones de cabello, cabello humano, AGM Luxury Hair, extensiones premium, cabello natural">
+    <title>AGM Luxury Hair - Extensiones de Cabello Humano Premium</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="logo.png">
 </head>
 <body>
-    <div class="container">
-        <div class="emoji">🚀</div>
-        <h1>¡Bienvenido! TE AMO ESPOSA MIA... ERES TODO </h1>
-        <p>Esta es mi primera página web publicada en GitHub Pages. </p>
-        <p>Creada con HTML, CSS y mucho ❤️</p>
-        <a href="https://github.com/agmluxuryhair" class="button">Ver mi GitHub</a>
-    </div>
-    
-    <script>
-        console.log('¡Página cargada exitosamente!  🎉');
-    </script>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="AGM Luxury Hair Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#beneficios">Beneficios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>AGM LUXURY HAIR</h1>
+            <p class="tagline">Cabello Humano Premium<br>Largo, Volumen y Brillo Natural</p>
+            <div class="cta-buttons">
+                <a href="#contacto" class="btn btn-primary">
+                    <span>📱</span> Contáctanos
+                </a>
+                <a href="#productos" class="btn btn-secondary">
+                    <span>✨</span> Ver Productos
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="beneficios" class="features">
+        <div class="container">
+            <h2 class="section-title">¿Por qué elegir AGM Luxury Hair?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">💎</div>
+                    <h3>100% Cabello Humano</h3>
+                    <p>Utilizamos únicamente cabello humano premium de la más alta calidad para resultados naturales y duraderos.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✨</div>
+                    <h3>Brillo Natural</h3>
+                    <p>Extensiones con brillo natural que se integran perfectamente con tu cabello, luciendo siempre radiante.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📏</div>
+                    <h3>Largo y Volumen</h3>
+                    <p>Consigue el largo y volumen que siempre has deseado de forma instantánea y natural.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Variedad de Estilos</h3>
+                    <p>Amplia gama de colores, texturas y largos para adaptarse perfectamente a tu estilo único.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⏰</div>
+                    <h3>Larga Duración</h3>
+                    <p>Extensiones de alta calidad diseñadas para durar, manteniendo su belleza por mucho tiempo.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👑</div>
+                    <h3>Lujo Accesible</h3>
+                    <p>Calidad premium a precios justos, porque todas merecen sentirse hermosas y seguras.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="productos" class="products">
+        <div class="container">
+            <h2 class="section-title">Nuestros Productos</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">💁‍♀️</div>
+                    <div class="product-info">
+                        <h3>Extensiones con Clip</h3>
+                        <p>Fáciles de colocar y quitar. Perfectas para cambios rápidos de look.</p>
+                        <p class="product-price">Desde $150.000</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">🌟</div>
+                    <div class="product-info">
+                        <h3>Extensiones de Queratina</h3>
+                        <p>Instalación profesional duradera y aspecto ultra natural.</p>
+                        <p class="product-price">Desde $350.000</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">✨</div>
+                    <div class="product-info">
+                        <h3>Extensiones Tape</h3>
+                        <p>Ligeras, cómodas y prácticamente invisibles.</p>
+                        <p class="product-price">Desde $280.000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Methods -->
+    <section class="payment">
+        <div class="container">
+            <h2>Métodos de Pago</h2>
+            <p>Facilitamos tu compra con múltiples opciones de pago seguras</p>
+            <div class="payment-methods">
+                <div class="payment-method">
+                    <span>💳</span>
+                    <span>Tarjeta de Crédito</span>
+                </div>
+                <div class="payment-method">
+                    <span>💰</span>
+                    <span>Tarjeta de Débito</span>
+                </div>
+                <div class="payment-method">
+                    <span>🏦</span>
+                    <span>Transferencia Bancaria</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social/Contact Section -->
+    <section id="contacto" class="social">
+        <div class="container">
+            <h2>¡Conecta con Nosotros!</h2>
+            <p>Estamos aquí para ayudarte a lograr el cabello de tus sueños</p>
+            <div class="social-buttons">
+                <a href="https://wa.me/573001234567?text=¡Hola!%20Me%20interesa%20conocer%20más%20sobre%20las%20extensiones%20de%20cabello%20AGM%20Luxury%20Hair" 
+                   class="social-btn whatsapp-btn" 
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    <span>📱</span> WhatsApp
+                </a>
+                <a href="https://www.instagram.com/agmluxuryhair" 
+                   class="social-btn instagram-btn"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    <span>📸</span> Instagram
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 AGM Luxury Hair. Todos los derechos reservados.</p>
+            <p>Cabello Humano Premium | 100% Natural</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
